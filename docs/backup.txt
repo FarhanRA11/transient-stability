@@ -1,0 +1,68 @@
+close all
+
+d1 = 36.6683 * pi/180;
+d2 = 18.2974 * pi/180;
+d3 = 0 * pi/180;
+
+Y12 = 1/Z12pu;
+Y13 = 1/Z13pu;
+Y23 = 1/Z23pu;
+
+Y11 = (Y12 + Y13);
+Y22 = (Y12 + Y23);
+Y33 = (Y13 + Y23);
+
+Ybus = [Y11 -Y12 -Y13;
+        -Y12 Y22 -Y23;
+        -Y13 -Y23 Y33];
+
+J12 = 1*1*imag(-Y12)*cos(d1-d2);
+J13 = 1*1*imag(-Y13)*cos(d1-d3);
+J23 = 1*1*imag(-Y23)*cos(d2-d3);
+J11 = J12 + J13;
+J22 = J12 + J23;
+J33 = J13 + J23;
+
+J = [J11 -J12 -J13;
+     -J12 J22 -J23;
+     -J13 -J23 J33];
+
+
+Mmat = diag([2*10/wg 2*15/wg 2*60/wg]);
+Dmat = diag([20 20 20]);
+A = [zeros(3) eye(3);
+     -inv(Mmat)*J  -inv(Mmat)*Dmat];
+max(real(eig(A)))
+
+% h = 92.3;
+% Mmat = diag([2*10/wg 2*15/wg 2*60/wg]);
+% Dmat = diag([20 20-h/(2*pi) 20]);
+% A = [zeros(3) eye(3);
+%      -inv(Mmat)*J  -inv(Mmat)*Dmat];
+% crit = max(real(eig(A)))
+
+
+
+
+% h_vals = 0:0.01:150;
+% crit_vals = zeros(size(h_vals));
+% 
+% for k = 1:length(h_vals)
+%     h = h_vals(k);
+% 
+%     Dmat = diag([20 20-h/(2*pi) 20]);
+% 
+%     A = [zeros(3) eye(3);
+%         -inv(Mmat)*J  -inv(Mmat)*Dmat];
+% 
+%     crit_vals(k) = max(real(eig(A)));
+% end
+% 
+% [opt, idx] = min(crit_vals)
+% idx*0.01
+% plot(h_vals, crit_vals,'LineWidth',1.5)
+% xlabel('h')
+% ylabel('crit = max(real(eig(A)))')
+% ylim([-3.5e-14 3.5e-14])
+% title('Sweep h vs crit')
+% grid on

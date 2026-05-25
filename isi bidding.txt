@@ -1,0 +1,34 @@
+1. Perancangan Strategi Manajemen Energi Virtual Power Plant untuk Integrasi PLTS Komunitas pada Jaringan Tegangan Rendah 250 kVA
+	Berpengalaman project powerfactory + pyhon. Pendekatan: profil beban,model powerfactory,simulasi skenario,implementasi monitoring dgn mikrokontroler. Mata kuliah Analisis Sistem Tenaga sedang diambil.
+aplikom A
+progdas A/B
+tekop C
+penguin A-
+
+2. Hosting Capacity Evaluation of PV and BESS Synergies in Medium-Voltage Distribution Grids
+	Berpengalaman powerfactory: model jaringan, loadflow, kontingensi, sensitivitas. Mempunyai project mandiri tentang uji baterai. Mata kuliah AST sedang diambil. Cukup tertarik mempelajari kontrol.
+ac B-
+tekop C
+progdas A/B
+aplikom A
+
+3. Sistem manajemen energi untuk sistem hibrid sederhana
+	Berpengalaman powerfactory: model jaringan, loadflow, kontingensi, sensitivitas. Mempunyai project mandiri tentang uji baterai. Mata kuliah AST sedang diambil. Cukup tertarik mempelajari kontrol.
+tekop C
+penguin A-
+sismik A
+aplikom A
+
+4. Pengembangan Saluran Transmisi untuk Sistem Supergrid Papua
+	Berpengalaman project powerfactory. Pendekatan: analisis geografi dan beban, modelling, analisis loadflow, kontingensi, stabilitas, short, ekonomi. Mata kuliah Analisis Sistem Tenaga sedang diambil.
+ac B-
+tekop C
+penguin A-
+aplikom A
+
+5. Design of Automatic Generation Control (AGC) for the Javaâ€“Maduraâ€“Bali Power System under High Variable Renewable Energy Penetration
+	Berpengalaman project powerfactory. Pendekatan: modelling sistem, analisis baseline, skenario VRE, rancang AGC dgn kontrol, fault/senstvity analysis. Mata kuliah Analisis Sistem Tenaga sedang diambil.
+aplikom A
+tekop C
+teken B/C
+ml2 B-

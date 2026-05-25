@@ -1,0 +1,9 @@
+Saya mahasiswa Teknik Elektro yang memiliki minat di power system. Saya menyukai perancangan, pengujian, dan analisis sebuah sistem.
+
+Pengalaman saya:
+1. Melakukan analisis full kontingensi saluran dan pengaruhnya terhadap perubahan beban saluran dan tegangan bus di jaringan transmisi. Dilakukan di mata kuliah Aplikasi Komputer untuk Sistem Tenaga Listrik dengan bantuan software powerfactory untuk modelling dan python untuk analisis.
+2. Simulasi dan analisis starting motor induksi dengan Simulink pada MATLAB di mata kuliah Mesin Listrik 2.
+3. Di pembagian tugas proyek Capstone, saya bertugas untuk merancang filter sensor ultrasonik, uji dan simulasi algoritma perhitungan, koding STM32, dan membantu desain PCB.
+4. Mempunyai proyek pribadi di rumah. Merancang alat untuk analisis berbagai jenis baterai rumah tangga, dengan memperkirakan hambatan internal, SoC, dan tegangannya.
+
+Sebagai catatan, menimbang beban kuliah saya saat ini, skripsi akan dikerjakan bersamaan dengan waktu kuliah, kemudian baru akan selesai dalam kurun waktu kurang lebih 2 semester. Mengingat saya masih kurang beberapa SKS untuk mata kuliah pilihan sebagai syarat kelulusan. Lalu saya juga harus mengambil kerja praktik di masa libur semester pada awal tahun 2026.

@@ -1,0 +1,63 @@
+========== LAPORAN ANALISIS FREKUENSI DAN SUDUT ROTOR ==========
+
+Tanggal: 17-May-2026 04:45:37
+
+1. OVERSHOOT FREKUENSI (t >= 1.15s)
+-----------------------------------
+Channel 1:
+  Max (Hz):  50.445838
+  Min (Hz):  49.986561
+  Range (Hz): 0.459277
+
+Channel 2:
+  Max (Hz):  50.550474
+  Min (Hz):  49.837567
+  Range (Hz): 0.712907
+
+Channel 3:
+  Max (Hz):  50.567871
+  Min (Hz):  49.899364
+  Range (Hz): 0.668507
+
+
+2. RoCoF (t >= 1.15s)
+-------------------
+Channel 1:
+  Max Positif (Hz/s):  2.311283
+  Max Negatif (Hz/s):  -2.476832
+Channel 2:
+  Max Positif (Hz/s):  6.416112
+  Max Negatif (Hz/s):  -6.934316
+Channel 3:
+  Max Positif (Hz/s):  5.069069
+  Max Negatif (Hz/s):  -5.170875
+
+3. SETTLING TIME (Kriteria 2%, Referensi t=0, t >= 1.15s)
+---------------------------------------------------------
+Channel 1:
+  Settling Time: 1.150000 s
+  Reference Value (rad): 0.373183
+  2% Band (rad): ±0.007464
+
+Channel 2:
+  Settling Time: 1.150000 s
+  Reference Value (rad): 0.662144
+  2% Band (rad): ±0.013243
+
+Channel 3:
+  Settling Time: 1.150000 s
+  Reference Value (rad): 0.000000
+  2% Band (rad): ±0.000000
+
+
+4. DAMPING RATIO (Logarithmic Decrement dengan FFT filtering, 1.15<=t<=10s)
+-----------------------------------------------------------------------
+Channel 1: 0.0000 %
+Channel 2: 0.0000 %
+Channel 3: 0.0000 %
+
+5. OSCILLATION FREQUENCY (1.15<=t<=10s)
+--------------------------------------
+Channel 1: 2.372887 Hz
+Channel 2: 2.372887 Hz
+Channel 3: 1.016951 Hz
