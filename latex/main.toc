@@ -44,23 +44,23 @@
 \contentsline {section}{\numberline {3.5}Metrik Evaluasi}{19}{section.3.5}%
 \contentsline {chapter}{\numberline {IV}Hasil dan Pembahasan}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Perbandingan Skenario 1 dan Skenario 2}{21}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Dampak ke Frekuensi}{22}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}Dampak ke Frekuensi}{21}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Dampak ke Osilasi Elektromekanis}{22}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Perbandingan Skenario 2 dan Skenario 3}{22}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Dampak ke Frekuensi}{22}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Dampak ke Osilasi Elektromekanis}{22}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Temuan Utama}{22}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Efek Dinamika Integrasi SPV}{22}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Kontribusi Inti dari \textit {Virtual Inertia}}{22}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Keterbatasan \textit {Virtual Inertia}}{22}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Dampak dari lokasi Gangguan}{22}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Perbandingan dengan Hasil Penelitian Sebelumnya}{22}{section.4.4}%
-\contentsline {chapter}{\numberline {V}Tambahan (Opsional)}{23}{chapter.5}%
-\contentsline {chapter}{\numberline {VI}Kesimpulan dan Saran}{24}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Kesimpulan}{24}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Saran}{24}{section.6.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{25}{section*.42}%
-\contentsline {chapter}{LAMPIRAN}{L-1}{section*.44}%
+\contentsline {section}{\numberline {4.3}Temuan Utama}{23}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Efek Dinamika Integrasi SPV}{23}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Kontribusi Inti dari \textit {Virtual Inertia}}{23}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Keterbatasan \textit {Virtual Inertia}}{23}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Dampak dari lokasi Gangguan}{23}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Perbandingan dengan Hasil Penelitian Sebelumnya}{23}{section.4.4}%
+\contentsline {chapter}{\numberline {V}Tambahan (Opsional)}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {VI}Kesimpulan dan Saran}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Kesimpulan}{26}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Saran}{26}{section.6.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{27}{section*.49}%
+\contentsline {chapter}{LAMPIRAN}{L-1}{section*.51}%
 \contentsline {section}{\numberline {L.1}Isi Lampiran}{L-1}{section.Alph0.1}%
 \contentsline {section}{\numberline {L.2}Panduan Latex}{L-2}{section.Alph0.2}%
 \contentsline {subsection}{\numberline {L.2.1}Syntax Dasar}{L-2}{subsection.Alph0.2.1}%
