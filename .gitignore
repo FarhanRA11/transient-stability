@@ -1,56 +1,6 @@
-simulink v2g g2v/
-paper/
-contoh/
-docs/
-daftar judul bidding.pdf
-isi bidding.txt
-
-
-# # Contoh .gitignore
-# # Beberapa file umum
-# .env                # file environment (rahasia)
-# .DS_Store
-# *.log               # semua file .log
-# *.tmp
-# *.bak
-
-# # Bahasa pemrograman / tool
-# node_modules/
-# dist/
-# build/
-# coverage/
-# __pycache__/
-# *.pyc
-# venv/
-# env/
-# .venv/
-
-# # IDE / editor
-# .idea/
-# .vscode/
-# *.suo
-# *.user
-# *.swp
-
-# # Binary / output
-# /bin/
-# /obj/
-# *.exe
-# *.dll
-
-# # Folder tertentu tapi sertakan file tertentu di dalamnya
-# logs/               # abaikan seluruh folder logs
-# logs/*.log
-# !logs/keep.log      # kecualikan file keep.log sehingga tetap ter-track
-
-# # Contoh pola rekursif (semua file temp di subfolder mana pun)
-# **/temp/**
-
-# # Abaikan file spesifik di root repo
-# /secret.txt
-
-# # Contoh pengecualian: abaikan semua file .config kecuali config/default.config
-# *.config
-# !config/default.config
-
-# # End of examples
+/simulink\ v2g\ g2v/
+/paper/
+/contoh/
+/docs/
+/judul_bidding.pdf
+/isi_bidding.txt
