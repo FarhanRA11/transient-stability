@@ -1,5 +1,6 @@
 tic
 clear 
+close all
 warning('off','all')
 tempFolder = tempdir;
 files = dir(tempFolder);
@@ -30,10 +31,10 @@ omega   = 2*pi*f_grid;  % Nominal grid angular speed (rad/s)
 Ppv = 2;
 
 % Generator mechanical parameters
-H1 = 7;
-H2 = 8;
-H3 = 12; % default 60
-D = 10;
+H1 = 3;     % 10, 7, 3
+H2 = 4;     % 15, 8, 4
+H3 = 5;    % 60, 12, 5
+D = 5;
 
 % RL load power demand at i-th bus (p.u.)
 S1pu = (1.5 + .45j);
@@ -96,8 +97,8 @@ LowSat_CC   = 0;
 t_fault_start = 1; % masuk ke variabel simulink
 FCT = 0.02;
 t_fault_end = t_fault_start + FCT; % masuk ke variabel simulink
-Dinv = 1;
-Hinv = 4;
+Dinv = 7;
+Hinv = 3;
 % Dinv = 0.0;
 % Hinv = 0.0;
 

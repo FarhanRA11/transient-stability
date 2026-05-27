@@ -205,22 +205,22 @@ Pada Gambar \ref{Fig:inverter}, terdapat filter LCL yang terdiri dari induktor d
 
 \textit{Virtual Inertia} membuat inverter berperilaku seperti generator sinkron yang secara alami mempunyai redaman dan inersia. \textit{Virtual Inertia} dapat merespon perubahan frekuensi pada grid melalui PLL dalam bentuk perubahan daya aktif yang cepat. Redaman dan inersia total pada jaringan akan meningkat sebagai hasil dari kontribusi \textit{Virtual Inertia} pada inverter.
 
-Berdasarkan persamaan ayunan persamaan \ref{Eq: Pswing}, nilai koefisien redaman ($\mathit{D}$) dan konstanta inersia ($\mathit{J}$) juga dapat diimplementasikan ke inverter dalam bentuk penguatan terhadap deviasi dan perubahan frekuensi. Maka dari itu, bisa didapatkan persamaan untuk menghitung daya akibat \textit{virtual inertia} seperti pada persamaan \ref{Eq: PVI}.
+Berdasarkan persamaan ayunan persamaan \ref{Eq: Pswing}, nilai koefisien redaman ($\mathit{D}$) dan konstanta inersia ($\mathit{H}$) juga dapat diimplementasikan ke inverter dalam bentuk penguatan terhadap deviasi dan perubahan frekuensi. Maka dari itu, bisa didapatkan persamaan untuk menghitung daya akibat \textit{virtual inertia} seperti pada persamaan \ref{Eq: PVI}.
 
 \begin{equation}
-	J\frac{d\omega}{dt} = P_m-P_e -D(\omega - \omega_n)
+	2H\frac{d\omega}{dt} = P_m-P_e -D(\omega - \omega_n)
 \label{Eq: Pswing}
 \end{equation}
 Definisikan $\mathit{\Delta P = P_m-P_e}$, lalu pindah ruas
 \begin{equation}
-	\Delta P = J\frac{d\omega}{dt} + D(\omega - \omega_n)
+	\Delta P = 2H\frac{d\omega}{dt} + D(\omega - \omega_n)
 \end{equation}
 Pada virtual inertia, inverter memberikan daya kompensasi yang arahnya melawan perubahan frekuensi, maka
 \begin{equation}
 	P_{VI} = -\Delta P
 \end{equation}
 \begin{equation}
-	P_{VI} = -J_{virt}\frac{d\omega}{dt} -D_{virt}(\omega - \omega_n)
+	P_{VI} = -2H_{virt}\frac{d\omega}{dt} -D_{virt}(\omega - \omega_n)
 \label{Eq: PVI}
 \end{equation}
 Sehingga, referensi daya aktif pada inverter akan menjadi
@@ -228,12 +228,12 @@ Sehingga, referensi daya aktif pada inverter akan menjadi
 	P_{ref} = P_{ref,0} + P_{VI}
 \end{equation}
 \begin{equation}
-	P_{ref} = P_{ref,0} -J_{virt}\frac{d\omega}{dt} -D_{virt}(\omega - \omega_n)
+	P_{ref} = P_{ref,0} -2H_{virt}\frac{d\omega}{dt} -D_{virt}(\omega - \omega_n)
 \end{equation}
 
 Referensi daya aktif pada kontroler inverter dibatasi oleh \textit{rating} daya inverter. Pembacaan frekuensi dari PLL beserta turunannya dilewatkan LPF untuk menghilangkan \textit{noise} untuk mengurangi risiko kesalahan pada kontroler.
 
-Pada pemodelan \textit{virtual inertia} ini, nilai parameter redaman virtual ($\mathit{D_{virt}}$) dan konstanta inersia virtual ($\mathit{J_{virt}}$) ditentukan nilainya adalah 1 p.u. dan 2 s. Sedangkan nilai konstanta waktu pada LPF adalah 0,08 s. Konstanta waktu pada LPF juga harus diperhatikan untuk menghindari respon yang terlalu lambat.
+Pada pemodelan \textit{virtual inertia} ini, nilai parameter redaman virtual ($\mathit{D_{virt}}$) dan konstanta inersia virtual ($\mathit{H_{virt}}$) ditentukan nilainya adalah 1 p.u. dan 2 s. Sedangkan nilai konstanta waktu pada LPF adalah 0,08 s. Konstanta waktu pada LPF juga harus diperhatikan untuk menghindari respon yang terlalu lambat.
 
 
 

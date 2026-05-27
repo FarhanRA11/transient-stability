@@ -26,6 +26,39 @@ close all
 % ========================================================
 
 if ~exist('freq','var') || ~exist('delta','var')
+
+%% ========================================================
+% 6b. MAKSIMUM DEVIASI SUDUT ROTOR RELATIF TERHADAP NILAI AWAL
+%% ========================================================
+
+fprintf('4. MAKSIMUM DEVIASI SUDUT ROTOR (relatif terhadap nilai awal)\n');
+fprintf('----------------------------------------------------\n');
+
+% gunakan window rotor (time_rotor, delta_win) jika tersedia
+if exist('delta_win','var')
+    data_for_dev = delta_win;
+    time_for_dev = time_rotor;
+else
+    data_for_dev = deltaData;
+    time_for_dev = time;
+end
+
+[n_dev_samples, n_dev_channels] = size(data_for_dev);
+max_dev = zeros(1,n_dev_channels);
+max_dev_time = nan(1,n_dev_channels);
+
+for i = 1:n_dev_channels
+    init_val = data_for_dev(1,i);
+    dev = abs(data_for_dev(:,i) - init_val);
+    [max_dev(i), idx] = max(dev);
+    max_dev_time(i) = time_for_dev(idx);
+
+    fprintf('Channel %d\n', i);
+    fprintf('  Initial Value   : %.8f rad\n', init_val);
+    fprintf('  Max Deviation   : %.8f rad\n', max_dev(i));
+    fprintf('  Time of Max Dev : %.6f s\n\n', max_dev_time(i));
+end
+
     error('Variabel freq dan delta harus ada di workspace.');
 end
 
@@ -194,145 +227,44 @@ for i = 1:num_channels
 end
 
 %% ========================================================
-% 7. DAMPED FREQUENCY + DAMPING RATIO
+% 6b. MAKSIMUM DEVIASI ABSOLUT SUDUT ROTOR (Nilai Awal)
 % ========================================================
 
-fprintf('4. DAMPED FREQUENCY + DAMPING RATIO\n');
+fprintf('4. MAKSIMUM DEVIASI ABSOLUT SUDUT ROTOR (dari nilai awal)\n');
 fprintf('----------------------------------------------------\n');
 
-damping_ratio    = nan(num_channels,1);
-oscillation_freq = nan(num_channels,1);
+max_abs_dev = zeros(1,num_channels);
+max_abs_dev_time = nan(1,num_channels);
+max_abs_dev_idx = nan(1,num_channels);
 
 for i = 1:num_channels
-
-    fprintf('Channel %d\n',i);
-
-    % =====================================================
-    % EXTRACT SIGNAL
-    % =====================================================
-
-    t = time_rotor(:);
-    x_raw = delta_win(:,i);
-
-    % =====================================================
-    % REMOVE STEADY STATE
-    % =====================================================
-
-    Nss = max(10, round(0.05*length(x_raw)));
-
-    x_ref = mean(x_raw(end-Nss+1:end));
-
-    x = x_raw - x_ref;
-
-    % =====================================================
-    % SAMPLING FREQUENCY
-    % =====================================================
-
-    fs_original = 1 / mean(diff(t));
-
-    % =====================================================
-    % DOWNSAMPLE
-    % =====================================================
-
-    target_fs = 200;   % Hz
-
-    decim = max(1, round(fs_original/target_fs));
-
-    x = decimate(x,decim);
-    t = decimate(t,decim);
-
-    fs = 1 / mean(diff(t));
-
-    fprintf('  Sampling fs : %.2f Hz\n',fs);
-
-    % =====================================================
-    % PSD - CARI FREKUENSI DOMINAN
-    % =====================================================
-
-    [Pxx,F] = pwelch(x,[],[],[],fs);
-
-    valid = F > 0.05 & F < 5;
-
-    Fv  = F(valid);
-    Pvv = Pxx(valid);
-
-    if isempty(Pvv) || all(Pvv <= 0)
-
-        fprintf('  Invalid spectrum\n\n');
-        continue;
-
-    end
-
-    % =====================================================
-    % CARI PUNCAK ELECTROMECHANICAL (0.5-3 Hz)
-    % =====================================================
-
-    valid_em = Fv >= 0.5 & Fv <= 3.0;
-    Fv_em = Fv(valid_em);
-    Pvv_em = Pvv(valid_em);
-
-    if ~isempty(Pvv_em)
-
-        [~,idxMax] = max(Pvv_em);
-        f_damped = Fv_em(idxMax);
-
-    else
-
-        % Fallback ke puncak dominan keseluruhan
-        [~,idxMax] = max(Pvv);
-        f_damped = Fv(idxMax);
-
-    end
-
-    oscillation_freq(i) = f_damped;
-
-    % =====================================================
-    % HITUNG DAMPING RATIO
-    % =====================================================
-
-    omega_d = 2*pi*f_damped;
-
-    Ts = settling_time(i);
-
-    % Rumus: zeta = 4 / sqrt((wd*Ts)^2 + 16)
-
-    if isnan(Ts) || Ts <= 0
-
-        damping_ratio(i) = NaN;
-
-    else
-
-        zeta = 4 / sqrt((omega_d*Ts)^2 + 16);
-
-        if ~isfinite(zeta) || zeta < 0 || zeta > 1
-
-            damping_ratio(i) = NaN;
-
-        else
-
-            damping_ratio(i) = 100*zeta;
-
-        end
-
-    end
-
-    % =====================================================
-    % DISPLAY
-    % =====================================================
-
-    fprintf('  Damped Frequency : %.6f Hz\n',f_damped);
-
-    fprintf('  Omega_d          : %.6f rad/s\n',omega_d);
-
-    fprintf('  Settling Time    : %.6f s\n',Ts);
-
-    fprintf('  Damping Ratio    : %.4f %%\n\n',...
-        damping_ratio(i));
-
+    
+    initial_angle = deltaData(1,i);
+    absolute_deviation = abs(deltaData(:,i) - initial_angle);
+    
+    [max_abs_dev(i), idx] = max(absolute_deviation);
+    max_abs_dev_time(i) = time(idx);
+    max_abs_dev_idx(i) = idx;
+    
+    fprintf('Gen %d:\n', i);
+    fprintf('  Initial Angle      : %.8f rad (%.4f deg)\n', ...
+        initial_angle, rad2deg(initial_angle));
+    fprintf('  Max Abs Deviation   : %.8f rad (%.4f deg)\n', ...
+        max_abs_dev(i), rad2deg(max_abs_dev(i)));
+    fprintf('  Time of Max Dev     : %.6f s\n\n', max_abs_dev_time(i));
+    
 end
 
+fprintf('RINGKASAN GEN 1-3:\n');
+fprintf('----------------------------------------------------\n');
+for i = 1:min(3, num_channels)
+    fprintf('Gen %d - Max Abs Dev: %.8f rad (%.4f deg) at t = %.6f s\n', ...
+        i, max_abs_dev(i), rad2deg(max_abs_dev(i)), max_abs_dev_time(i));
+end
+fprintf('\n');
+
 %% ========================================================
-% 8. SUMMARY
+% 7. SUMMARY
 % ========================================================
 
 fprintf('\n');
@@ -364,24 +296,12 @@ fprintf('----------------------------------------------------\n');
 
 fprintf('Settling Time (s)    : ');
 fprintf('%10.5f ',settling_time);
-fprintf('\n\n');
-
-fprintf('Damping Ratio (%%)\n');
-
-fprintf('  ');
-
-fprintf('%10.4f ',damping_ratio);
-
-fprintf('\n\n');
-
-fprintf('Oscillation Frequency (Hz)\n');
-
-fprintf('  ');
-
-fprintf('%10.5f ',oscillation_freq);
-
 fprintf('\n');
 
-fprintf('====================================================\n');
-fprintf('ANALISIS SELESAI\n');
-fprintf('====================================================\n');
+fprintf('Max Abs Deviation (rad) : ');
+fprintf('%10.8f ',max_abs_dev);
+fprintf('\n');
+
+fprintf('Max Abs Deviation (deg) : ');
+fprintf('%10.4f ',rad2deg(max_abs_dev));
+fprintf('\n\n');

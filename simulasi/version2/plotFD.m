@@ -121,7 +121,8 @@ for ch = 1:2
 end
 
 grid on;
-xlim([0 5])
+xlim([0 10])
+ylim([0 0.06])
 xlabel('Frekuensi (Hz)')
 ylabel('Magnitudo')
 title('FFT Sudut Rotor Generator 1-2')
