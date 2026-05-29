@@ -1,6 +1,6 @@
 \chapter{Hasil dan Pembahasan}
 
-Bab ini akan membandingkan respon sistem dari skenario 1, skenario 2, dan skenario 3 ketika pasca gangguan. Fokus utama adalah analisis stabilitas sistem dengan memperhatikan frekuensi dan osilasi elektromekanis.
+Bab ini akan membandingkan respon sistem dari skenario 1, skenario 2, dan skenario 3 ketika pasca gangguan. Fokus utama adalah analisis stabilitas sistem dengan memperhatikan osilasi elektromekanis, terkhususnya pada kecepatan dan sudut rotor.
 
 
 
@@ -11,7 +11,7 @@ Bagian ini akan menggambarkan efek dari penetrasi SPV pada stabilitas transien s
 
 
 
-\subsection{Dampak ke Frekuensi}
+\subsection{Dampak ke Kecepatan Rotor}
 
 \begin{figure}[ht]
     \centering
@@ -28,7 +28,8 @@ Bagian ini akan menggambarkan efek dari penetrasi SPV pada stabilitas transien s
         \caption{}
         \label{Fig:frek-pv1-fault1}
     \end{subfigure}
-    \caption{Plot Frekuensi, Gangguan di Bus 1: (a) Skenario 1; (b) Skenario 2}
+    \caption{Plot Kecepatan Rotor, Gangguan di Bus 1: (a) Skenario 1; (b) Skenario 2}
+    \label{Fig:frek12-fault1}
 \end{figure}
 
 Pada \ref{Fig:frek-baseline-fault1} terlihat ... sementara pada \ref{Fig:frek-pv1-fault1} terlihat bahwa ...
@@ -48,14 +49,34 @@ Pada \ref{Fig:frek-baseline-fault1} terlihat ... sementara pada \ref{Fig:frek-pv
         \caption{}
         \label{Fig:rocof-pv1-fault1}
     \end{subfigure}
-    \caption{Plot RoCoF, Gangguan di Bus 1: (a) Skenario 1; (b) Skenario 2}
+    \caption{Plot RoCoF dari Gambar \ref{Fig:frek12-fault1}, Gangguan di Bus 1: (a) Skenario 1; (b) Skenario 2}
 \end{figure}
 
 Pada \ref{Fig:rocof-baseline-fault1} terlihat ... sementara pada \ref{Fig:rocof-pv1-fault1} terlihat bahwa ...
 
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{contents/chapter-4/fft-baseline-fault1.png}
+        \caption{}
+        \label{Fig:fft-baseline-fault1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{contents/chapter-4/fft-pv-fault1.png}
+        \caption{}
+        \label{Fig:fft-pv1-fault1}
+    \end{subfigure}
+    \caption{Plot FFT Kecepatan Rotor dari Gambar \ref{Fig:frek12-fault1}, Gangguan di Bus 1: (a) Skenario 1; (b) Skenario 2}
+\end{figure}
+
+Pada \ref{Fig:fft-baseline-fault1} terlihat ... sementara pada \ref{Fig:fft-pv1-fault1} terlihat bahwa ...
 
 
-\subsection{Dampak ke Osilasi Elektromekanis}
+
+\subsection{Dampak ke Sudut Rotor}
 
 \begin{figure}[ht]
     \centering
@@ -77,26 +98,6 @@ Pada \ref{Fig:rocof-baseline-fault1} terlihat ... sementara pada \ref{Fig:rocof-
 
 Pada \ref{Fig:ang-baseline-fault1} terlihat ... sementara pada \ref{Fig:ang-pv1-fault1} terlihat bahwa ...
 
-\begin{figure}[ht]
-    \centering
-    \begin{subfigure}[b]{0.49\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{contents/chapter-4/fft-baseline-fault1.png}
-        \caption{}
-        \label{Fig:fft-baseline-fault1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.49\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{contents/chapter-4/fft-pv-fault1.png}
-        \caption{}
-        \label{Fig:fft-pv1-fault1}
-    \end{subfigure}
-    \caption{Plot FFT Sudut Rotor, Gangguan di Bus 1: (a) Skenario 1; (b) Skenario 2}
-\end{figure}
-
-Pada \ref{Fig:fft-baseline-fault1} terlihat ... sementara pada \ref{Fig:fft-pv1-fault1} terlihat bahwa ...
-
 
 
 
@@ -104,7 +105,7 @@ Pada \ref{Fig:fft-baseline-fault1} terlihat ... sementara pada \ref{Fig:fft-pv1-
 
 
 
-\subsection{Dampak ke Frekuensi}
+\subsection{Dampak ke Kecepatan Rotor}
 
 \begin{figure}[ht]
     \centering
@@ -121,7 +122,8 @@ Pada \ref{Fig:fft-baseline-fault1} terlihat ... sementara pada \ref{Fig:fft-pv1-
         \caption{}
         \label{Fig:frek-vi-fault1}
     \end{subfigure}
-    \caption{Plot Frekuensi, Gangguan di Bus 1: (a) Skenario 2; (b) Skenario 3}
+    \caption{Plot Kecepatan Rotor, Gangguan di Bus 1: (a) Skenario 2; (b) Skenario 3}
+    \label{Fig:frek23-fault1}
 \end{figure}
 
 Pada \ref{Fig:frek-pv2-fault1} terlihat ... sementara pada \ref{Fig:frek-vi-fault1} terlihat bahwa ...
@@ -141,14 +143,34 @@ Pada \ref{Fig:frek-pv2-fault1} terlihat ... sementara pada \ref{Fig:frek-vi-faul
         \caption{}
         \label{Fig:rocof-vi-fault1}
     \end{subfigure}
-    \caption{Plot RoCoF, Gangguan di Bus 1: (a) Skenario 2; (b) Skenario 3}
+    \caption{Plot RoCoF dari Gambar \ref{Fig:frek23-fault1}, Gangguan di Bus 1: (a) Skenario 2; (b) Skenario 3}
 \end{figure}
 
 Pada \ref{Fig:rocof-pv2-fault1} terlihat ... sementara pada \ref{Fig:rocof-vi-fault1} terlihat bahwa ...
 
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{contents/chapter-4/fft-pv-fault1.png}
+        \caption{}
+        \label{Fig:fft-pv2-fault1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{contents/chapter-4/fft-vi-fault1.png}
+        \caption{}
+        \label{Fig:fft-vi-fault1}
+    \end{subfigure}
+    \caption{Plot FFT Kecepatan Rotor dari Gambar \ref{Fig:frek23-fault1}, Gangguan di Bus 1: (a) Skenario 2; (b) Skenario 3}
+\end{figure}
+
+Pada \ref{Fig:fft-pv2-fault1} terlihat ... sementara pada \ref{Fig:fft-vi-fault1} terlihat bahwa ...
 
 
-\subsection{Dampak ke Osilasi Elektromekanis}
+
+\subsection{Dampak ke Sudut Rotor}
 
 \begin{figure}[ht]
     \centering
@@ -169,27 +191,6 @@ Pada \ref{Fig:rocof-pv2-fault1} terlihat ... sementara pada \ref{Fig:rocof-vi-fa
 \end{figure}
 
 Pada \ref{Fig:ang-pv2-fault1} terlihat ... sementara pada \ref{Fig:ang-vi-fault1} terlihat bahwa ...
-
-\begin{figure}[ht]
-    \centering
-    \begin{subfigure}[b]{0.49\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{contents/chapter-4/fft-pv-fault1.png}
-        \caption{}
-        \label{Fig:fft-pv2-fault1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.49\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{contents/chapter-4/fft-vi-fault1.png}
-        \caption{}
-        \label{Fig:fft-vi-fault1}
-    \end{subfigure}
-    \caption{Plot FFT Sudut Rotor, Gangguan di Bus 1: (a) Skenario 2; (b) Skenario 3}
-\end{figure}
-
-Pada \ref{Fig:fft-pv2-fault1} terlihat ... sementara pada \ref{Fig:fft-vi-fault1} terlihat bahwa ...
-
 
 
 

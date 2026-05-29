@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.20)  28 MAY 2026 01:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.20)  29 MAY 2026 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1261,12 +1261,12 @@ BAB II.
 
  (./contents/chapter-3/chapter-3.tex
 BAB III.
-<contents/chapter-3/model_spv.png, id=616, 681.747pt x 395.076pt>
+<contents/chapter-3/model_spv.png, id=624, 681.747pt x 395.076pt>
 File: contents/chapter-3/model_spv.png Graphic file (type png)
 <use contents/chapter-3/model_spv.png>
 Package pdftex.def Info: contents/chapter-3/model_spv.png  used on input line 20.
 (pdftex.def)             Requested size: 341.43306pt x 197.86906pt.
-<contents/chapter-3/mppt.png, id=618, 744.98325pt x 413.74574pt>
+<contents/chapter-3/mppt.png, id=626, 744.98325pt x 413.74574pt>
 File: contents/chapter-3/mppt.png Graphic file (type png)
 <use contents/chapter-3/mppt.png>
 Package pdftex.def Info: contents/chapter-3/mppt.png  used on input line 33.
@@ -1278,13 +1278,13 @@ Package pdftex.def Info: contents/chapter-3/mppt.png  used on input line 33.
 
 
  <./contents/chapter-3/model_spv.png>]
-<contents/chapter-3/bess.png, id=628, 623.32875pt x 440.24475pt>
+<contents/chapter-3/bess.png, id=636, 623.32875pt x 440.24475pt>
 File: contents/chapter-3/bess.png Graphic file (type png)
 <use contents/chapter-3/bess.png>
 Package pdftex.def Info: contents/chapter-3/bess.png  used on input line 71.
 (pdftex.def)             Requested size: 341.43306pt x 241.14787pt.
  [11 <./contents/chapter-3/mppt.png>]
-<contents/chapter-3/inverter.png, id=639, 906.9885pt x 440.847pt>
+<contents/chapter-3/inverter.png, id=647, 906.9885pt x 440.847pt>
 File: contents/chapter-3/inverter.png Graphic file (type png)
 <use contents/chapter-3/inverter.png>
 Package pdftex.def Info: contents/chapter-3/inverter.png  used on input line 118.
@@ -1295,30 +1295,30 @@ Overfull \hbox (5.58022pt too wide) in paragraph at lines 123--124
  []
 
 [12 <./contents/chapter-3/bess.png>]
-<contents/chapter-3/pll.png, id=649, 1046.10825pt x 357.13425pt>
+<contents/chapter-3/pll.png, id=657, 1046.10825pt x 357.13425pt>
 File: contents/chapter-3/pll.png Graphic file (type png)
 <use contents/chapter-3/pll.png>
 Package pdftex.def Info: contents/chapter-3/pll.png  used on input line 130.
 (pdftex.def)             Requested size: 341.43306pt x 116.56314pt.
  [13 <./contents/chapter-3/inverter.png> <./contents/chapter-3/pll.png>]
-<contents/chapter-3/kontrol_inverter.png, id=657, 1109.94675pt x 335.45325pt>
+<contents/chapter-3/kontrol_inverter.png, id=665, 1109.94675pt x 335.45325pt>
 File: contents/chapter-3/kontrol_inverter.png Graphic file (type png)
 <use contents/chapter-3/kontrol_inverter.png>
 Package pdftex.def Info: contents/chapter-3/kontrol_inverter.png  used on input line 149.
 (pdftex.def)             Requested size: 341.43306pt x 103.1858pt.
-<contents/chapter-3/vi.png, id=663, 880.4895pt x 244.5135pt>
+<contents/chapter-3/vi.png, id=671, 880.4895pt x 244.5135pt>
 File: contents/chapter-3/vi.png Graphic file (type png)
 <use contents/chapter-3/vi.png>
 Package pdftex.def Info: contents/chapter-3/vi.png  used on input line 201.
 (pdftex.def)             Requested size: 341.43306pt x 94.81516pt.
  [14 <./contents/chapter-3/kontrol_inverter.png>] [15 <./contents/chapter-3/vi.png>]
-<contents/chapter-3/sld.png, id=686, 1205.2528pt x 627.09282pt>
+<contents/chapter-3/sld.png, id=694, 1205.2528pt x 627.09282pt>
 File: contents/chapter-3/sld.png Graphic file (type png)
 <use contents/chapter-3/sld.png>
 Package pdftex.def Info: contents/chapter-3/sld.png  used on input line 318.
 (pdftex.def)             Requested size: 341.43306pt x 177.65161pt.
  [16]
-<contents/chapter-3/sld_ref.png, id=692, 649.2255pt x 458.31226pt>
+<contents/chapter-3/sld_ref.png, id=700, 649.2255pt x 458.31226pt>
 File: contents/chapter-3/sld_ref.png Graphic file (type png)
 <use contents/chapter-3/sld_ref.png>
 Package pdftex.def Info: contents/chapter-3/sld_ref.png  used on input line 333.
@@ -1328,35 +1328,81 @@ Package pdftex.def Info: contents/chapter-3/sld_ref.png  used on input line 333.
 
  (./contents/chapter-4/chapter-4.tex
 BAB IV.
-<contents/chapter-4/frek-baseline-fault1.png, id=727, 526.96875pt x 395.22656pt>
+<contents/chapter-4/frek-baseline-fault1.png, id=736, 526.96875pt x 395.22656pt>
 File: contents/chapter-4/frek-baseline-fault1.png Graphic file (type png)
 <use contents/chapter-4/frek-baseline-fault1.png>
 Package pdftex.def Info: contents/chapter-4/frek-baseline-fault1.png  used on input line 20.
 (pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/frek-pv-fault1.png, id=728, 526.96875pt x 395.22656pt>
+<contents/chapter-4/frek-pv-fault1.png, id=737, 526.96875pt x 395.22656pt>
 File: contents/chapter-4/frek-pv-fault1.png Graphic file (type png)
 <use contents/chapter-4/frek-pv-fault1.png>
 Package pdftex.def Info: contents/chapter-4/frek-pv-fault1.png  used on input line 27.
 (pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/rocof-baseline-fault1.png, id=731, 526.96875pt x 395.22656pt>
+<contents/chapter-4/rocof-baseline-fault1.png, id=740, 526.96875pt x 395.22656pt>
 File: contents/chapter-4/rocof-baseline-fault1.png Graphic file (type png)
 <use contents/chapter-4/rocof-baseline-fault1.png>
-Package pdftex.def Info: contents/chapter-4/rocof-baseline-fault1.png  used on input line 40.
+Package pdftex.def Info: contents/chapter-4/rocof-baseline-fault1.png  used on input line 41.
 (pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/rocof-pv-fault1.png, id=732, 526.96875pt x 395.22656pt>
+<contents/chapter-4/rocof-pv-fault1.png, id=741, 526.96875pt x 395.22656pt>
 File: contents/chapter-4/rocof-pv-fault1.png Graphic file (type png)
 <use contents/chapter-4/rocof-pv-fault1.png>
-Package pdftex.def Info: contents/chapter-4/rocof-pv-fault1.png  used on input line 47.
+Package pdftex.def Info: contents/chapter-4/rocof-pv-fault1.png  used on input line 48.
 (pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/ang-baseline-fault1.png, id=735, 526.96875pt x 395.22656pt>
+<contents/chapter-4/fft-baseline-fault1.png, id=746, 526.96875pt x 395.22656pt>
+File: contents/chapter-4/fft-baseline-fault1.png Graphic file (type png)
+<use contents/chapter-4/fft-baseline-fault1.png>
+Package pdftex.def Info: contents/chapter-4/fft-baseline-fault1.png  used on input line 61.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+<contents/chapter-4/fft-pv-fault1.png, id=747, 526.96875pt x 395.22656pt>
+File: contents/chapter-4/fft-pv-fault1.png Graphic file (type png)
+<use contents/chapter-4/fft-pv-fault1.png>
+Package pdftex.def Info: contents/chapter-4/fft-pv-fault1.png  used on input line 68.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+<contents/chapter-4/ang-baseline-fault1.png, id=752, 526.96875pt x 395.22656pt>
 File: contents/chapter-4/ang-baseline-fault1.png Graphic file (type png)
 <use contents/chapter-4/ang-baseline-fault1.png>
-Package pdftex.def Info: contents/chapter-4/ang-baseline-fault1.png  used on input line 64.
+Package pdftex.def Info: contents/chapter-4/ang-baseline-fault1.png  used on input line 85.
 (pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/ang-pv-fault1.png, id=736, 526.96875pt x 395.22656pt>
+<contents/chapter-4/ang-pv-fault1.png, id=753, 526.96875pt x 395.22656pt>
 File: contents/chapter-4/ang-pv-fault1.png Graphic file (type png)
 <use contents/chapter-4/ang-pv-fault1.png>
-Package pdftex.def Info: contents/chapter-4/ang-pv-fault1.png  used on input line 71.
+Package pdftex.def Info: contents/chapter-4/ang-pv-fault1.png  used on input line 92.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+File: contents/chapter-4/frek-pv-fault1.png Graphic file (type png)
+<use contents/chapter-4/frek-pv-fault1.png>
+Package pdftex.def Info: contents/chapter-4/frek-pv-fault1.png  used on input line 114.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+<contents/chapter-4/frek-vi-fault1.png, id=756, 526.96875pt x 395.22656pt>
+File: contents/chapter-4/frek-vi-fault1.png Graphic file (type png)
+<use contents/chapter-4/frek-vi-fault1.png>
+Package pdftex.def Info: contents/chapter-4/frek-vi-fault1.png  used on input line 121.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+File: contents/chapter-4/rocof-pv-fault1.png Graphic file (type png)
+<use contents/chapter-4/rocof-pv-fault1.png>
+Package pdftex.def Info: contents/chapter-4/rocof-pv-fault1.png  used on input line 135.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+<contents/chapter-4/rocof-vi-fault1.png, id=759, 526.96875pt x 395.22656pt>
+File: contents/chapter-4/rocof-vi-fault1.png Graphic file (type png)
+<use contents/chapter-4/rocof-vi-fault1.png>
+Package pdftex.def Info: contents/chapter-4/rocof-vi-fault1.png  used on input line 142.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+File: contents/chapter-4/fft-pv-fault1.png Graphic file (type png)
+<use contents/chapter-4/fft-pv-fault1.png>
+Package pdftex.def Info: contents/chapter-4/fft-pv-fault1.png  used on input line 155.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+<contents/chapter-4/fft-vi-fault1.png, id=764, 526.96875pt x 395.22656pt>
+File: contents/chapter-4/fft-vi-fault1.png Graphic file (type png)
+<use contents/chapter-4/fft-vi-fault1.png>
+Package pdftex.def Info: contents/chapter-4/fft-vi-fault1.png  used on input line 162.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+File: contents/chapter-4/ang-pv-fault1.png Graphic file (type png)
+<use contents/chapter-4/ang-pv-fault1.png>
+Package pdftex.def Info: contents/chapter-4/ang-pv-fault1.png  used on input line 179.
+(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
+<contents/chapter-4/ang-vi-fault1.png, id=769, 526.96875pt x 395.22656pt>
+File: contents/chapter-4/ang-vi-fault1.png Graphic file (type png)
+<use contents/chapter-4/ang-vi-fault1.png>
+Package pdftex.def Info: contents/chapter-4/ang-vi-fault1.png  used on input line 186.
 (pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
 [21
 
@@ -1364,54 +1410,7 @@ Package pdftex.def Info: contents/chapter-4/ang-pv-fault1.png  used on input lin
 
 
 
- <./contents/chapter-4/frek-baseline-fault1.png (PNG copy)> <./contents/chapter-4/frek-pv-fault1.png (PNG copy)> <./contents/chapter-4/rocof-baseline-fault1.png (PNG copy)> <./contents/chapter-4/rocof-pv-fault1.png (PNG copy)>]
-<contents/chapter-4/fft-baseline-fault1.png, id=744, 526.96875pt x 395.22656pt>
-File: contents/chapter-4/fft-baseline-fault1.png Graphic file (type png)
-<use contents/chapter-4/fft-baseline-fault1.png>
-Package pdftex.def Info: contents/chapter-4/fft-baseline-fault1.png  used on input line 84.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/fft-pv-fault1.png, id=745, 526.96875pt x 395.22656pt>
-File: contents/chapter-4/fft-pv-fault1.png Graphic file (type png)
-<use contents/chapter-4/fft-pv-fault1.png>
-Package pdftex.def Info: contents/chapter-4/fft-pv-fault1.png  used on input line 91.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-File: contents/chapter-4/frek-pv-fault1.png Graphic file (type png)
-<use contents/chapter-4/frek-pv-fault1.png>
-Package pdftex.def Info: contents/chapter-4/frek-pv-fault1.png  used on input line 113.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/frek-vi-fault1.png, id=748, 526.96875pt x 395.22656pt>
-File: contents/chapter-4/frek-vi-fault1.png Graphic file (type png)
-<use contents/chapter-4/frek-vi-fault1.png>
-Package pdftex.def Info: contents/chapter-4/frek-vi-fault1.png  used on input line 120.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-File: contents/chapter-4/rocof-pv-fault1.png Graphic file (type png)
-<use contents/chapter-4/rocof-pv-fault1.png>
-Package pdftex.def Info: contents/chapter-4/rocof-pv-fault1.png  used on input line 133.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/rocof-vi-fault1.png, id=751, 526.96875pt x 395.22656pt>
-File: contents/chapter-4/rocof-vi-fault1.png Graphic file (type png)
-<use contents/chapter-4/rocof-vi-fault1.png>
-Package pdftex.def Info: contents/chapter-4/rocof-vi-fault1.png  used on input line 140.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-File: contents/chapter-4/ang-pv-fault1.png Graphic file (type png)
-<use contents/chapter-4/ang-pv-fault1.png>
-Package pdftex.def Info: contents/chapter-4/ang-pv-fault1.png  used on input line 157.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/ang-vi-fault1.png, id=754, 526.96875pt x 395.22656pt>
-File: contents/chapter-4/ang-vi-fault1.png Graphic file (type png)
-<use contents/chapter-4/ang-vi-fault1.png>
-Package pdftex.def Info: contents/chapter-4/ang-vi-fault1.png  used on input line 164.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-File: contents/chapter-4/fft-pv-fault1.png Graphic file (type png)
-<use contents/chapter-4/fft-pv-fault1.png>
-Package pdftex.def Info: contents/chapter-4/fft-pv-fault1.png  used on input line 177.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-<contents/chapter-4/fft-vi-fault1.png, id=757, 526.96875pt x 395.22656pt>
-File: contents/chapter-4/fft-vi-fault1.png Graphic file (type png)
-<use contents/chapter-4/fft-vi-fault1.png>
-Package pdftex.def Info: contents/chapter-4/fft-vi-fault1.png  used on input line 184.
-(pdftex.def)             Requested size: 208.01492pt x 156.01326pt.
-) [22 <./contents/chapter-4/ang-baseline-fault1.png (PNG copy)> <./contents/chapter-4/ang-pv-fault1.png (PNG copy)> <./contents/chapter-4/fft-baseline-fault1.png (PNG copy)> <./contents/chapter-4/fft-pv-fault1.png (PNG copy)>] [23 <./contents/chapter-4/frek-vi-fault1.png (PNG copy)> <./contents/chapter-4/rocof-vi-fault1.png (PNG copy)>] [24 <./contents/chapter-4/ang-vi-fault1.png (PNG copy)> <./contents/chapter-4/fft-vi-fault1.png (PNG copy)>]
+ <./contents/chapter-4/frek-baseline-fault1.png (PNG copy)> <./contents/chapter-4/frek-pv-fault1.png (PNG copy)>]) [22 <./contents/chapter-4/rocof-baseline-fault1.png (PNG copy)> <./contents/chapter-4/rocof-pv-fault1.png (PNG copy)> <./contents/chapter-4/fft-baseline-fault1.png (PNG copy)> <./contents/chapter-4/fft-pv-fault1.png (PNG copy)>] [23 <./contents/chapter-4/ang-baseline-fault1.png (PNG copy)> <./contents/chapter-4/ang-pv-fault1.png (PNG copy)> <./contents/chapter-4/frek-vi-fault1.png (PNG copy)> <./contents/chapter-4/rocof-vi-fault1.png (PNG copy)>] [24 <./contents/chapter-4/fft-vi-fault1.png (PNG copy)> <./contents/chapter-4/ang-vi-fault1.png (PNG copy)>]
 \openout2 = `contents/chapter-5/chapter-5.aux'.
 
  (./contents/chapter-5/chapter-5.tex
@@ -1442,7 +1441,7 @@ BAB VI.
 
 
 ] (./contents/appendix/appendix-latex.tex
-<contents/chapter-1/sample-fig.png, id=816, 578.16pt x 434.37282pt>
+<contents/chapter-1/sample-fig.png, id=833, 578.16pt x 434.37282pt>
 File: contents/chapter-1/sample-fig.png Graphic file (type png)
 <use contents/chapter-1/sample-fig.png>
 Package pdftex.def Info: contents/chapter-1/sample-fig.png  used on input line 17.
@@ -1467,21 +1466,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 87B97ADA1EED24ACEC6531B215CE6DE0;14458.
+(rerunfilecheck)             Checksum: C55FE2E79097B473119B56355DF603A9;14414.
  ) 
 Here is how much of TeX's memory you used:
- 42438 strings out of 467341
- 952208 string characters out of 5419596
- 1788367 words of memory out of 5000000
- 70455 multiletter control sequences out of 15000+600000
- 671532 words of font info for 82 fonts, out of 8000000 for 9000
+ 42443 strings out of 467341
+ 952281 string characters out of 5419596
+ 1790004 words of memory out of 5000000
+ 70459 multiletter control sequences out of 15000+600000
+ 671881 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,12n,108p,814b,1842s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (53 pages, 1417996 bytes).
+Output written on main.pdf (53 pages, 1429539 bytes).
 PDF statistics:
- 1053 PDF objects out of 1200 (max. 8388607)
- 927 compressed objects within 10 object streams
- 303 named destinations out of 1000 (max. 500000)
+ 1070 PDF objects out of 1200 (max. 8388607)
+ 940 compressed objects within 10 object streams
+ 304 named destinations out of 1000 (max. 500000)
  768 words of extra memory for PDF output out of 10000 (max. 10000000)
 

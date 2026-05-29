@@ -393,11 +393,11 @@ Jaringan \textit{baseline} kemudian akan diberikan injeksi sistem SPV. Hal terse
 Skenario gangguan digunakan untuk simulasi uji stabilitas transien adalah hubung singkat simetris 3 fasa di ketiga bus yang dilakukan secara bergantian. Resistansi hubung singkat diasumsikan sebesar 1 $\mathit{m\Omega}$. Gangguan terjadi saat t = 0,1 s, dengan durasi gangguan 20 ms.
 
 \[
-kondisi \ sistem :
+\text{kondisi sistem:}
 \begin{cases}
-      pra \ gangguan & \text{, } t < 1 \ s \\
-      saat \ gangguan & \text{, } 1 \leq t \leq 1,02 \ s \\
-	  pasca \ gangguan & \text{, } t > 1,02 \ s \\
+      \text{pra gangguan} & \text{, t $<$ 1 s} \\
+      \text{saat gangguan} & \text{, 1 $\leq$ t $\leq$ 1,02 s} \\
+	  \text{pasca gangguan} & \text{, t $>$ 1,02 s} \\
 \end{cases}
 \]
 
@@ -423,15 +423,17 @@ Berdasarkan 3 skenario di atas, akan dilakukan 2 pembahasan utama, yaitu perband
 Metrik evaluasi dalam konteks ini adalah variabel dari sistem yang diambil untuk merepresentasikan performa stabilitas transien sistem. Sistem dievaluasi pada masa pemulihan gangguan, beberapa saat setelah gangguan tersebut dibersihkan, yaitu pada t > 1,1 s. Metrik evaluasi yang digunakan dalam penelitian ini adalah sebagai berikut
 
 \begin{enumerate}
-	\item \textit{Overshoot} frekuensi, $\Delta f$ (Hz): nilai deviasi maksimum frekuensi di puncak atas dan bawah.
-	\item RoCoF (\textit{Rate of Change of Frequency}), $\dot{f}$ (Hz/s): nilai maksimum dan minimum dari laju perubahan frekuensi. Diambil dari puncak atas dan bawah pada plot turunan frekuensi.
-	\item Deviasi Sudut Rotor, $\Delta\delta$ (rad): nilai deviasi absolut maksimum sudut rotor dari nilai referensi, relatif terhadap generator 3.
-	\item \textit{Settling Time} osilasi sudut rotor, $t_s$ (s): waktu yang dibutuhkan untuk osilasi sudut rotor stabil dengan kriteria kestabilan 2\%. 
-	\item Frekuensi Teredam osilasi sudut rotor, $f_d$ (Hz): frekuensi osilasi yang telah teredam. Frekuensi ini dapat diestimasi dengan pendekatan FFT, lalu diambil frekuensi kritis, dalam konteks sistem tenaga listrik, diambil frekuensi terendah yang muncul pada spektrum frekuensi.
-	\item Rasio Redaman osilasi sudut rotor, $\zeta$ (\%): seberapa cepat osilasi sudut rotor meredam. Rasio redaman diestimasi dari persamaan \ref{Eq: zeta}.
+	\item \textit{Overshoot} Kecepatan rotor, $\Delta \omega_{max,i}$ (p.u.): nilai deviasi maksimum kecepatan rotor generator $i$ relatif terhadap kecepatan nominalnya 1 p.u..
+	\item \textit{Steady State Error} Kecepatan Rotor, $\Delta \omega_{ss,i}$ (p.u.): nilai deviasi kecepatan rotor generator $i$ relatif terhadap kecepatan nominalnya 1 p.u. pada kondisi steady state setelah gangguan dibersihkan.
+	\item \textit{Settling Time} Osilasi Kecepatan Sudut Rotor, $t_{s,i}$ (s): waktu yang dibutuhkan untuk osilasi kecepatan rotor generator $i$ kembali stabil ke nilai nominal dengan kriteria kestabilan 2\%.
+	\item RoCoF (\textit{Rate of Change of Frequency}), $\dot{f}_{max,i}$ (Hz/s): nilai maksimum dan minimum dari laju perubahan frekuensi rotor generator $i$. Diambil dari puncak pada plot turunan frekuensi.
+	\item Frekuensi Teredam Osilasi Kecepatan Rotor, $f_{d,i}$ (Hz): frekuensi osilasi yang telah teredam. Frekuensi ini dapat diestimasi dengan pendekatan FFT, lalu diambil frekuensi kritis, dalam konteks sistem tenaga listrik adalah frekuensi terendah yang dominan pada spektrum frekuensi.
+	\item Rasio Redaman Osilasi Kecepatan Rotor, $\zeta_i$ (\%): seberapa cepat osilasi kecepatan rotor generator $i$ teredam. Rasio redaman diestimasi dari persamaan \ref{Eq: zeta}. Rasio redaman merepresentasikan perilaku respon sistem.
+		\begin{equation}
+			\zeta_i = \frac{4}{\sqrt{(\omega_{d,i} t_{s,i})^2 + 16}} \times 100\%
+		\label{Eq: zeta}
+		\end{equation}
+	\item Deviasi Sudut Rotor, $\Delta\delta_{max,i}$ (rad): nilai deviasi absolut maksimum sudut rotor generator $i$ dari nilai referensi, relatif terhadap generator 3.
 	
-	\begin{equation}
-		\zeta = \frac{4}{\sqrt{(\omega_d t_s)^2 + 16}}
-	\label{Eq: zeta}
-	\end{equation}
+
 \end{enumerate}
