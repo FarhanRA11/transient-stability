@@ -86,6 +86,9 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepackage{pgf-pie}
+
+\usepackage{placeins}
+\usepackage{multirow}
 \usetikzlibrary{calc}
 \usetikzlibrary{positioning}
 \usetikzlibrary{arrows}

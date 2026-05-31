@@ -1,17 +1,15 @@
 \chapter{Hasil dan Pembahasan}
 
-Bab ini akan membandingkan respon sistem dari skenario 1, skenario 2, dan skenario 3 ketika pasca gangguan. Fokus utama adalah analisis stabilitas sistem dengan memperhatikan osilasi elektromekanis, terkhususnya pada kecepatan dan sudut rotor.
+Bab ini akan membandingkan respon sistem dari skenario 1, skenario 2, dan skenario 3 ketika pasca gangguan. Fokus utama adalah analisis stabilitas sistem dengan memperhatikan osilasi elektromekanis, terkhususnya pada kecepatan dan sudut rotor. Osilasi elektromekanis muncul secara alami sebagai respon sistem terhadap gangguan, serta dipengaruhi oleh komponen penyusun jaringan tersebut.
 
 
 
 
 \section{Perbandingan Skenario 1 dan Skenario 2}
 
-Bagian ini akan menggambarkan efek dari penetrasi SPV pada stabilitas transien sistem tenaga listrik.
 
 
-
-\subsection{Dampak ke Kecepatan Rotor Generator 1}
+\subsection{Respon Kecepatan Rotor}
 
 \begin{figure}[ht]
     \centering
@@ -32,8 +30,6 @@ Bagian ini akan menggambarkan efek dari penetrasi SPV pada stabilitas transien s
     \label{Fig:frek12-fault1}
 \end{figure}
 
-Dari Gambar \ref{Fig:frek12-fault1} terlihat \textit{overshoot} kecepatan rotor meningkat dari 1,06\% pada skenario 1 menjadi 2,89\% pada skenario 2. \textit{Undershoot} juga mengalami peningkatan dari 0,38\% menjadi 0,61\%. Demikian juga \textit{settling time} mengalami kenaikan dari 3,08 detik menjadi 5,54 detik. Sementara itu, \textit{steady state error} tidak mengalami perubahan signifikan, hanya berselisih $9,5 \times 10^{-5}$ p.u. antara kedua skenario.
-
 \begin{figure}[ht]
     \centering
     \begin{subfigure}[b]{0.49\linewidth}
@@ -52,8 +48,6 @@ Dari Gambar \ref{Fig:frek12-fault1} terlihat \textit{overshoot} kecepatan rotor 
     \caption{Plot \textit{RoCoF} dari Gambar \ref{Fig:frek12-fault1}, Gangguan di Bus 1.}
     \label{Fig:rocof12-fault1}
 \end{figure}
-
-Gambar \ref{Fig:rocof12-fault1} menunjukkan bahwa puncak \textit{RoCoF}, baik positif maupun negatif mengalami peningkatan cukup signifikan. Pada skenario 1, puncak \textit{RoCoF} mencapai 6,62 Hz/s dan -7,26 Hz/s. Sementara pada skenario 2, puncak \textit{RoCoF} menjadi 14,97 Hz/s dan -14,48 Hz/s.
 
 \begin{figure}[ht]
     \centering
@@ -74,11 +68,16 @@ Gambar \ref{Fig:rocof12-fault1} menunjukkan bahwa puncak \textit{RoCoF}, baik po
     \label{Fig:fft12-fault1}
 \end{figure}
 
-Hasil FFT dari plot kecepatan rotor ditunjukkan pada Gambar \ref{Fig:fft12-fault1}. Frekuensi kritis yang dominan pada kedua skenario sama persis di 2,5 Hz. Namun, amplitudonya pada skenario 2 meningkat secara signifikan dibandingkan dengan skenario 1.
+\FloatBarrier
+
+Fokus pembahasan gen 1
+singgung gen 2-3 seperlunya
+tabel metrik w semua gen
+bahas trend gen 1-3
 
 
 
-\subsection{Dampak ke Sudut Rotor Generator 1}
+\subsection{Respon Sudut Rotor}
 
 \begin{figure}[ht]
     \centering
@@ -99,12 +98,53 @@ Hasil FFT dari plot kecepatan rotor ditunjukkan pada Gambar \ref{Fig:fft12-fault
     \label{Fig:ang12-fault1}
 \end{figure}
 
-Sudut rotor pada Gambar \ref{Fig:ang12-fault1} menunjukkan pergeseran sudut rotor pada skenario 2 akibat penetrasi SPV. Deviasi maksimum sudut rotor meningkat dari 0.22 rad pada skenario 1 menjadi 0.52 rad pada skenario 2.
+\FloatBarrier
+
+fokus pembahasan gen 1
+singgung gen 2-3 seperlunya
+tabel metrik d semua gen
+bahas trend gen 1-3
 
 
 
-\subsection{Data Hasil Keseluruhan}
+\subsection{Interpretasi Sistem}
 
+\begin{table}[ht]
+	\caption{Tabel Hasil Perbandingan Skenario 1 dan Skenario 2.}
+	\vspace{0.5em}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        & \multicolumn{3}{c|}{Skenario 1}
+        & \multicolumn{3}{c|}{Skenario 2} \\
+        \cline{2-7}
+        & $G_1$ & $G_2$ & $G_3$ & $G_1$ & $G_2$ & $G_3$ \\
+        \hline
+        $\Delta\omega_{max}$ (\%) & 
+        1,058 & 0,823 & 0,682 & 2,891 & 2,129 & 1,757 \\
+        $\Delta\omega_{min}$ (\%) & 
+        -0,380 & -0,107 & -0,032 & -0,610 & -0,023 & -0,010 \\
+        $\omega_{SSE}$ (\%) & 
+        -0,028 & -0,028 & -0,028 & -0,018 & -0,019 & -0,019 \\
+        $t_s$ (s) & 
+        3,080 & 2,458 & 2,040 & 5,539 & 4,917 & 4,533 \\
+        RoCoF$_{max}$ (Hz/s) & 
+        6,621 & 4,151 & 3,241 & 14,972 & 6,935 & 4,560 \\
+        RoCoF$_{min}$ (Hz/s) & 
+        -7,262 & -4,411 & -2,805 & -14,475 & -7,169 & -3,928 \\
+        $f_d$ (Hz) & 
+        2,487 & 2,487 & 2,487 & 2,381 & 2,328 & 2,275 \\
+        $|\Delta\delta|_{max}$ (rad) & 
+        0,225 & 0,068 & 0,000 & 0,516 & 0,098 & 0,000 \\
+        \hline
+	\end{tabular}
+	\label{Tab: tabel hasil 12}
+\end{table}
+
+\FloatBarrier
+
+satukan pembahasan trend gen 1-3 pada f dan d
+mana gen paling terdampak, paling stabil, dll
 
 
 
@@ -133,8 +173,6 @@ Sudut rotor pada Gambar \ref{Fig:ang12-fault1} menunjukkan pergeseran sudut roto
     \label{Fig:frek23-fault1}
 \end{figure}
 
-Pada \ref{Fig:frek-pv2-fault1} terlihat ... sementara pada \ref{Fig:frek-vi-fault1} terlihat bahwa ...
-
 \begin{figure}[ht]
     \centering
     \begin{subfigure}[b]{0.49\linewidth}
@@ -152,8 +190,6 @@ Pada \ref{Fig:frek-pv2-fault1} terlihat ... sementara pada \ref{Fig:frek-vi-faul
     \end{subfigure}
     \caption{Plot RoCoF dari Gambar \ref{Fig:frek23-fault1}, Gangguan di Bus 1.}
 \end{figure}
-
-Pada \ref{Fig:rocof-pv2-fault1} terlihat ... sementara pada \ref{Fig:rocof-vi-fault1} terlihat bahwa ...
 
 \begin{figure}[ht]
     \centering
@@ -173,7 +209,12 @@ Pada \ref{Fig:rocof-pv2-fault1} terlihat ... sementara pada \ref{Fig:rocof-vi-fa
     \caption{Plot FFT Kecepatan Rotor dari Gambar \ref{Fig:frek23-fault1}, Gangguan di Bus 1.}
 \end{figure}
 
-Pada \ref{Fig:fft-pv2-fault1} terlihat ... sementara pada \ref{Fig:fft-vi-fault1} terlihat bahwa ...
+\FloatBarrier
+
+fokus pembahasan gen 1
+singgung gen 2-3 seperlunya
+tabel metrik f semua gen 2.47955
+bahas trend gen 1-3
 
 
 
@@ -198,7 +239,52 @@ Pada \ref{Fig:fft-pv2-fault1} terlihat ... sementara pada \ref{Fig:fft-vi-fault1
     \label{Fig:ang23-fault1}
 \end{figure}
 
-Pada \ref{Fig:ang-pv2-fault1} terlihat ... sementara pada \ref{Fig:ang-vi-fault1} terlihat bahwa ...
+\FloatBarrier
+
+fokus pembahasan gen 1
+singgung gen 2-3 seperlunya
+tabel metrik f semua gen
+bahas trend gen 1-3
+
+
+
+\subsection{Interpretasi Sistem}
+
+\begin{table}[ht]
+	\caption{Tabel Hasil Perbandingan Skenario 1 dan Skenario 2.}
+	\vspace{0.5em}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        & \multicolumn{3}{c|}{Skenario 2}
+        & \multicolumn{3}{c|}{Skenario 3} \\
+        \cline{2-7}
+        & $G_1$ & $G_2$ & $G_3$ & $G_1$ & $G_2$ & $G_3$ \\
+        \hline
+        $\Delta\omega_{max}$ (\%) & 
+        2,891 & 2,129 & 1,757 & 2,786 & 2,295 & 1,928 \\
+        $\Delta\omega_{min}$ (\%) & 
+        -0,610 & -0,023 & -0,010 & -0,424 & -0,009 & -0,010 \\
+        $\omega_{SSE}$ (\%) & 
+        -0,018 & -0,019 & -0,019 & -0,122 & -0,122 & -0,122 \\
+        $t_s$ (s) & 
+        5,539 & 4,917 & 4,533 & 2,860 & 3,068 & 2,965 \\
+        RoCoF$_{max}$ (Hz/s) & 
+        14,972 & 6,935 & 4,560 & 14,168 & 6,757 & 5,914 \\
+        RoCoF$_{min}$ (Hz/s) & 
+        -14,475 & -7,169 & -3,928 & -17,361 & -7,287 & -3,771 \\
+        $f_d$ (Hz) & 
+        2,487 & 2,487 & 2,487 & 2,381 & 2,328 & 2,275 \\
+        $|\Delta\delta|_{max}$ (rad) & 
+        0,516 & 0,098 & 0,000 & 0,544 & 0,094 & 0,000 \\
+        \hline
+	\end{tabular}
+	\label{Tab: tabel hasil 23}
+\end{table}
+
+satukan pembahasan trend gen 1-3 pada f dan d
+mana gen paling terdampak, paling stabil, dll
+
 
 
 

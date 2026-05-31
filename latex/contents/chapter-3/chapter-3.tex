@@ -425,12 +425,12 @@ Metrik evaluasi dalam konteks ini adalah variabel dari sistem yang diambil untuk
 \begin{enumerate}
 	\item \textit{Overshoot} Kecepatan rotor, $\Delta \omega_{max,i}$ (p.u.): nilai deviasi maksimum kecepatan rotor generator $i$ relatif terhadap kecepatan nominalnya 1 p.u..
 	\item \textit{Steady State Error} Kecepatan Rotor, $\Delta \omega_{ss,i}$ (p.u.): nilai deviasi kecepatan rotor generator $i$ relatif terhadap kecepatan nominalnya 1 p.u. pada kondisi steady state setelah gangguan dibersihkan.
-	\item \textit{Settling Time} Osilasi Kecepatan Sudut Rotor, $t_{s,i}$ (s): waktu yang dibutuhkan untuk osilasi kecepatan rotor generator $i$ kembali stabil ke nilai nominal dengan kriteria kestabilan 2\%.
+	\item \textit{Settling Time} Osilasi Kecepatan Sudut Rotor, $t_{s,i}$ (s): waktu yang dibutuhkan untuk osilasi kecepatan rotor generator $i$ kembali stabil ke nilai nominal dengan toleransi kestabilan 0,5\%.
 	\item RoCoF (\textit{Rate of Change of Frequency}), $\dot{f}_{max,i}$ (Hz/s): nilai maksimum dan minimum dari laju perubahan frekuensi rotor generator $i$. Diambil dari puncak pada plot turunan frekuensi.
 	\item Frekuensi Teredam Osilasi Kecepatan Rotor, $f_{d,i}$ (Hz): frekuensi osilasi yang telah teredam. Frekuensi ini dapat diestimasi dengan pendekatan FFT, lalu diambil frekuensi kritis, dalam konteks sistem tenaga listrik adalah frekuensi terendah yang dominan pada spektrum frekuensi.
-	\item Rasio Redaman Osilasi Kecepatan Rotor, $\zeta_i$ (\%): seberapa cepat osilasi kecepatan rotor generator $i$ teredam. Rasio redaman diestimasi dari persamaan \ref{Eq: zeta}. Rasio redaman merepresentasikan perilaku respon sistem.
+	\item Rasio Redaman Osilasi Kecepatan Rotor, $\zeta_i$ (\%): seberapa cepat osilasi kecepatan rotor generator $i$ teredam. Rasio redaman diestimasi dari persamaan \ref{Eq: zeta} dengan $\epsilon = 0,005$. Rasio redaman merepresentasikan perilaku respon sistem.
 		\begin{equation}
-			\zeta_i = \frac{4}{\sqrt{(\omega_{d,i} t_{s,i})^2 + 16}} \times 100\%
+			\zeta = \frac{1}{\sqrt{1 + (\frac{2\pi f_{d} t_{s}}{-\ln(\epsilon)})^2 }} \times 100\%
 		\label{Eq: zeta}
 		\end{equation}
 	\item Deviasi Sudut Rotor, $\Delta\delta_{max,i}$ (rad): nilai deviasi absolut maksimum sudut rotor generator $i$ dari nilai referensi, relatif terhadap generator 3.

@@ -13,7 +13,7 @@ end
 fprintf('Jumlah sample  : %d\n', num_samples);
 fprintf('Jumlah channel : %d\n\n', num_channels);
 
-t_start_analysis = 0;
+t_start_analysis = 1.1;
 t_end_analysis   = 20;
 
 idx_start = find(time >= t_start_analysis, 1, 'first');
